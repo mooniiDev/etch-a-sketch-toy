@@ -1,0 +1,43 @@
+body {
+  background: url('../images/noise.png') #233140;
+  font-family: 'Cabin Sketch', cursive;
+  color: #FFF;
+  text-align: center;
+}
+
+.title {
+  margin: 30px 0;
+  text-shadow: 0px 5px rgb(23, 31, 40);
+  font-size: 50px;
+}
+
+.main-content {
+  margin: 0 auto;
+  max-width: 700px;
+}
+.grid-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+.grid-buttons button {
+  height: 85px;
+  width: 85px;
+  background-color: #E87502;
+  color: #FFF;
+  font-size: 20px;
+  border: 2px solid #FFF;
+  border-radius: 50%;
+  box-shadow: 0px 7px rgb(23, 31, 40);
+  cursor: pointer;
+  outline: none;
+  transition: all .2s ease;
+}
+.grid-buttons button:hover {
+  background-color: #C00C20;
+}
+.grid-buttons button:focus {
+  -webkit-transform: translateY(4px);
+  transform: translateY(7px);
+  background-color: #C00C20;
+  box-shadow: none;
+}
