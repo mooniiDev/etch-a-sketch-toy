@@ -7,7 +7,7 @@ body {
 
 .title {
   margin: 30px 0;
-  text-shadow: 0px 5px rgb(23, 31, 40);
+  text-shadow: 0 5px #171f28;
   font-size: 50px;
 }
 
@@ -17,17 +17,18 @@ body {
 }
 .grid-buttons {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 .grid-buttons button {
-  height: 85px;
-  width: 85px;
+  margin: 0 20px;
+  padding: 13px 5px;
+  min-width: 110px;
   background-color: #E87502;
   color: #FFF;
   font-size: 20px;
   border: 2px solid #FFF;
-  border-radius: 50%;
-  box-shadow: 0px 7px rgb(23, 31, 40);
+  border-radius: 25px;
+  box-shadow: 0 7px #171f28;
   cursor: pointer;
   outline: none;
   transition: all .2s ease;
@@ -35,9 +36,11 @@ body {
 .grid-buttons button:hover {
   background-color: #C00C20;
 }
+.grid-buttons button:active {
+  box-shadow: 0 4px #0c1116;
+  -webkit-transform: translateY(3px);
+  transform: translateY(3px);
+}
 .grid-buttons button:focus {
-  -webkit-transform: translateY(4px);
-  transform: translateY(7px);
   background-color: #C00C20;
-  box-shadow: none;
 }
