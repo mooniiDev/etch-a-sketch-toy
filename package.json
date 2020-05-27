@@ -1,0 +1,25 @@
+{
+  "name": "etch-a-sketch-toy",
+  "version": "1.0.0",
+  "description": "A browser version of drawing toy similar to Etch A Sketch.",
+  "main": "scripts.js",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mooniiDev/etch-a-sketch-toy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mooniiDev/etch-a-sketch-toy/issues"
+  },
+  "homepage": "https://github.com/mooniiDev/etch-a-sketch-toy#readme"
+}

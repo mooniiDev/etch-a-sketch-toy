@@ -1,23 +1,25 @@
 body {
   background: url('../images/noise.png') #233140;
+  text-align: center;
   font-family: 'Cabin Sketch', cursive;
   color: #FFF;
-  text-align: center;
 }
 
 .title {
-  margin: 30px 0;
-  text-shadow: 0 5px #171f28;
+  margin: 20px 0 10px 0;
   font-size: 50px;
+  text-shadow: 0 5px #171F28;
+}
+.subtitle {
+  margin: 0 0 20px 0;
+  font-size: 25px;
+  text-shadow: 0 3px #171F28;
 }
 
-.main-content {
-  margin: 0 auto;
-  max-width: 700px;
-}
 .grid-buttons {
   display: flex;
   justify-content: center;
+  margin-bottom: 40px;
 }
 .grid-buttons button {
   margin: 0 20px;
@@ -33,14 +35,41 @@ body {
   outline: none;
   transition: all .2s ease;
 }
-.grid-buttons button:hover {
-  background-color: #C00C20;
-}
 .grid-buttons button:active {
-  box-shadow: 0 4px #0c1116;
+  box-shadow: 0 4px #180C06;
   -webkit-transform: translateY(3px);
   transform: translateY(3px);
 }
 .grid-buttons button:focus {
   background-color: #C00C20;
+}
+
+.grid-container {
+  display: inline-grid;
+  background-color: #B4B4B4;
+  gap: 1px;
+}
+.grid-container > div {
+  background-color: #CCCCCC;
+}
+.grid-16x16 {
+  grid-template-columns: repeat(16, auto);
+}
+.grid-16x16 > div {
+  height: 31px;
+  width: 31px;
+}
+.grid-32x32 {
+  grid-template-columns: repeat(32, auto);
+}
+.grid-32x32 > div {
+  height: 15px;
+  width: 15px;
+}
+.grid-64x64 {
+  grid-template-columns: repeat(64, auto);
+}
+.grid-64x64 > div {
+  height: 7px;
+  width: 7px;
 }
