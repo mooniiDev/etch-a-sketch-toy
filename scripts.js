@@ -1,9 +1,9 @@
-function generateGrid(divNum = 1024, className = 'grid-32x32') {
+function generateGrid(divNum = 20 * 20, className = 'grid-20x20') {
   const gridContainer = document.querySelector('.grid-container');
   gridContainer.innerHTML = '';
   for (let i = 0; i < divNum; i += 1) {
     const gridDiv = document.createElement('div');
-    gridContainer.classList.remove('grid-16x16', 'grid-32x32', 'grid-64x64');
+    gridContainer.classList.remove('grid-10x10', 'grid-20x20', 'grid-30x30');
     gridContainer.classList.add(className);
     gridContainer.appendChild(gridDiv);
   }
@@ -11,16 +11,26 @@ function generateGrid(divNum = 1024, className = 'grid-32x32') {
 generateGrid();
 
 function chooseGrid() {
-  const gridButtons = document.querySelector('.grid-buttons');
-  gridButtons.addEventListener('click', (event) => {
-    if (event.target.classList.contains('grid-16')) {
-      event.target.classList.add('red-color');
-      generateGrid(256, 'grid-16x16');
-    } else if (event.target.classList.contains('grid-32')) {
-      generateGrid();
-    } else if (event.target.classList.contains('grid-64')) {
-      generateGrid(4096, 'grid-64x64');
-    }
+  const gridButtons = document.querySelectorAll('.grid-btn');
+  gridButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      if (button.classList.contains('grid-10')) {
+        gridButtons[0].classList.add('active-btn');
+        gridButtons[1].classList.remove('active-btn');
+        gridButtons[2].classList.remove('active-btn');
+        generateGrid(10 * 10, 'grid-10x10');
+      } else if (button.classList.contains('grid-20')) {
+        gridButtons[0].classList.remove('active-btn');
+        gridButtons[1].classList.add('active-btn');
+        gridButtons[2].classList.remove('active-btn');
+        generateGrid();
+      } else if (button.classList.contains('grid-30')) {
+        gridButtons[0].classList.remove('active-btn');
+        gridButtons[1].classList.remove('active-btn');
+        gridButtons[2].classList.add('active-btn');
+        generateGrid(30 * 30, 'grid-30x30');
+      }
+    });
   });
 }
 chooseGrid();

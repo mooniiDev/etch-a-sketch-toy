@@ -1,75 +1,75 @@
+/* LIGHT PINK -> #F44D9B, DARK PINK -> #E9275B, BLUE -> #5DE8E5, PURPLE -> #392270 */
+html {
+  height: 100%;
+}
 body {
-  background: url('../images/noise.png') #233140;
+  background-color: #5A236C;
+  background-image: linear-gradient(to bottom right, #392270, #E9275B);
+  font-family: 'Bellota Text', cursive;
   text-align: center;
-  font-family: 'Cabin Sketch', cursive;
   color: #FFF;
 }
 
 .title {
-  margin: 20px 0 10px 0;
+  margin: 30px 0 0 0;
   font-size: 50px;
-  text-shadow: 0 5px #171F28;
-}
-.subtitle {
-  margin: 0 0 20px 0;
-  font-size: 25px;
-  text-shadow: 0 3px #171F28;
+  text-shadow: 0 0 13px #FFF;
 }
 
 .grid-buttons {
   display: flex;
   justify-content: center;
-  margin-bottom: 40px;
 }
-.grid-buttons button {
-  margin: 0 20px;
-  padding: 13px 5px;
-  min-width: 110px;
-  background-color: #E87502;
-  color: #FFF;
+.grid-buttons > button {
+  margin: 25px 20px;
+  padding: 27px 0;
+  width: 80px;
+  background-color: transparent;
   font-size: 20px;
-  border: 2px solid #FFF;
-  border-radius: 25px;
-  box-shadow: 0 7px #171f28;
+  color: #FFF;
+  text-shadow: 0 0 7px #FFF;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #FFF, 0 0 10px #FFF inset;
   cursor: pointer;
-  outline: none;
-  transition: all .2s ease;
+  outline: 0 !important;
+  transition: all .5s ease;
 }
-.grid-buttons button:active {
-  box-shadow: 0 4px #180C06;
-  -webkit-transform: translateY(3px);
-  transform: translateY(3px);
+.active-btn {
+  box-shadow: 0 0 30px #F44D9B, 0 0 5px #F44D9B inset !important;
 }
-.grid-buttons button:focus {
-  background-color: #C00C20;
-}
-
 .grid-container {
   display: inline-grid;
-  background-color: #B4B4B4;
-  gap: 1px;
+  grid-gap: 1px;
+  border: 5px solid #5A236C;
+  box-shadow: 0 0 30px #392270;
 }
 .grid-container > div {
-  background-color: #CCCCCC;
+  background-color: #FFF;
 }
-.grid-16x16 {
-  grid-template-columns: repeat(16, auto);
+.grid-10x10 {
+  grid-template-columns: repeat(10, auto);
 }
-.grid-16x16 > div {
-  height: 31px;
-  width: 31px;
+.grid-10x10 > div {
+  height: 47px;
+  width: 47px;
 }
-.grid-32x32 {
-  grid-template-columns: repeat(32, auto);
+.grid-20x20 {
+  grid-template-columns: repeat(20, auto);
 }
-.grid-32x32 > div {
+.grid-20x20 > div {
+  height: 23px;
+  width: 23px;
+}
+.grid-30x30 {
+  grid-template-columns: repeat(30, auto);
+}
+.grid-30x30 > div {
   height: 15px;
   width: 15px;
 }
-.grid-64x64 {
-  grid-template-columns: repeat(64, auto);
-}
-.grid-64x64 > div {
-  height: 7px;
-  width: 7px;
+
+.copyright{
+  font-size: 17px;
+  text-shadow: 0 0 7px #FFF;
 }
