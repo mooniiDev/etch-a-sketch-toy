@@ -1,4 +1,3 @@
-/* LIGHT PINK -> #F44D9B, DARK PINK -> #E9275B, BLUE -> #5DE8E5, PURPLE -> #392270 */
 html {
   height: 100%;
 }
@@ -11,17 +10,36 @@ body {
 }
 
 .title {
-  margin: 30px 0 0 0;
+  margin: 30px 0 20px 0;
   font-size: 50px;
   text-shadow: 0 0 13px #FFF;
 }
 
-.grid-buttons {
+.options {
   display: flex;
   justify-content: center;
 }
-.grid-buttons > button {
-  margin: 25px 20px;
+.color-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.rectangle {
+  margin: 7px;
+  padding: 10px;
+  width: 80px;
+  background-color: transparent;
+  color: #FFF;
+  text-shadow: 0 0 7px #FFF;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 0 5px #FFF, 0 0 5px #FFF inset;
+  cursor: pointer;
+  outline: 0 !important;
+  transition: all .3s ease-in;
+}
+.circle {
+  margin: 25px 10px;
   padding: 27px 0;
   width: 80px;
   background-color: transparent;
@@ -33,15 +51,20 @@ body {
   box-shadow: 0 0 10px #FFF, 0 0 10px #FFF inset;
   cursor: pointer;
   outline: 0 !important;
-  transition: all .5s ease;
+  transition: all .3s ease-in;
 }
-.active-btn {
-  box-shadow: 0 0 30px #F44D9B, 0 0 5px #F44D9B inset !important;
+.active {
+  box-shadow: 0 0 30px #F44D9B, 0 0 2px #F44D9B inset;
+}
+
+.toy-container {
+  margin-top: 20px;
 }
 .grid-container {
   display: inline-grid;
   grid-gap: 1px;
   border: 5px solid #5A236C;
+  border-radius: 2px;
   box-shadow: 0 0 30px #392270;
 }
 .grid-container > div {
