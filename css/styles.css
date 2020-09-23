@@ -15,6 +15,10 @@ body {
   text-shadow: 0 0 13px #FFF;
 }
 
+.description {
+  font-size: 18px;
+}
+
 .options {
   display: flex;
   justify-content: center;
