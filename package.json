@@ -3,11 +3,10 @@
   "version": "1.0.0",
   "description": "A browser version of drawing toy similar to Etch A Sketch.",
   "main": "scripts.js",
-  "dependencies": {},
   "devDependencies": {
     "eslint": "^7.7.0",
-    "eslint-config-airbnb-base": "^14.2.0",
-    "eslint-plugin-import": "^2.22.0"
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
